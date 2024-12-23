@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>707 - Lost in Space</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            animation: float 6s ease-in-out infinite;
+        }
+        h1 {
+            font-size: 8rem;
+            margin: 0;
+            color: #ff4757;
+            text-shadow: 0 0 20px rgba(255, 71, 87, 0.8);
+        }
+        p {
+            font-size: 1.40rem;
+            margin: 20px 25px;
+            color: #ced6e0;
+        }
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            z-index: -1;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <h1>707</h1>
+        <p>Working on it! The page is still being built and will be ready shortly.</p>
+        <!-- <p>Let him cook!</p> -->
+    </div>
+</body>
+</html>
