@@ -23,7 +23,7 @@ body{
     font-family: 'Markazi';
     background: var(--bg-black-900);
     /* new */
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 *{
@@ -195,6 +195,7 @@ ul{
     display: block;
     padding: 0 30px;
     opacity: 1;
+    transition: all 0.5s ease;
     /* new */
     animation: fadeIn 2s ease-in-out;
 }
@@ -205,10 +206,7 @@ ul{
     max-width: 1100px;
     width: 100%;
     margin: auto;
-    /* overflow: hidden; */
-}
-.section{
-    transition: all 1s ease;
+    overflow: visible;
 }
 .section .container{
     padding-top: 35px;
@@ -619,7 +617,7 @@ h3.profession{
     /* box-shadow: 0 0 20px rgba(48, 46, 77, 0.15); */
 }
 .service .service-name .service-name-inner:hover{
-    transform: scale(1.05);
+    transform: scale(1.01);
     box-shadow: 0 0 20px var(--bg-black-50);
 }
 .service .service-name .service-name-inner .icon{
@@ -692,7 +690,7 @@ h3.profession{
 }
 .service .stats .stats-inner .stat-info:hover {
     box-shadow: 0 0 20px var(--bg-black-50);
-    transform: scale(1.01);
+    transform: scale(1.001);
 }
 .service .stats .stats-inner .stat-info h3 {
     color: var(--text-black-900);
@@ -748,7 +746,7 @@ h3.profession{
     transition: all 0.3s ease;
 }
 .projects .project-name-inner:hover{
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
     box-shadow: 0 0 20px var(--bg-black-50);
 }
 .projects .project-name-inner .project-img img{
@@ -1100,13 +1098,29 @@ h3.profession{
         padding-right: 10px;
     }
     h3.hello,
-    h3.profession{
+    h3.profession,
+    .about .about-content .about-text h3{
         font-size: 20px;
     }
     
     h3.hello span{
         font-size: 25px
-    } 
+    }
+    .section{
+        padding:0 18px;
+    }
+    .about .about-content .personal-info .motto p{
+        font-size: 13px;
+    }
+    .home-info p,
+    .about .about-content .about-text p{
+        font-size: 16.5px;
+    }
+    .projects .project-name-inner:hover,
+    .service .stats .stats-inner .stat-info:hover {
+        transform: scale(1);
+        box-shadow: 0 0 10px var(--bg-black-50);
+    }
     
 }
 @media (min-height: 1000px) {

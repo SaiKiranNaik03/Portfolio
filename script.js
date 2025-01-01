@@ -14,6 +14,9 @@ playPauseIcon.addEventListener('click', () => {
         playPauseIcon.className = 'fa-solid fa-volume-xmark'; // Update to pause icon
     }
 });
+audio.addEventListener('ended', () => {
+    playPauseIcon.className = 'fa-solid fa-volume-xmark'; // Update to pause icon
+});
 
 // Typing effect
 let typed = new Typed('.typing', {

@@ -7,14 +7,15 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text x='0' y='25' font-size='25'>🧑‍💼</text></svg>">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/color-1.css" class="alt-style" title="color-1" disabled>
-    <link rel="stylesheet" href="./css/color-2.css" class="alt-style" title="color-2" >
-    <link rel="stylesheet" href="./css/color-3.css" class="alt-style" title="color-3" disabled>
-    <link rel="stylesheet" href="./css/color-4.css" class="alt-style" title="color-4" disabled>
-    <link rel="stylesheet" href="./css/color-5.css" class="alt-style" title="color-5" disabled>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-switch.css">
     <!-- FF4081 00B0FF 2196F3  -->
+     <style>
+        :root{
+            --skin-color:#37b182;   
+        }
+     </style>
 </head>
 <body>
 
@@ -33,7 +34,7 @@
                 <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
                 <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
                 <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#projects"><i class="fa fa-briefcase"></i>projects</a></li>
+                <li><a href="#projects"><i class="fa fa-briefcase"></i>Projects</a></li>
                 <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
             <div class="nav-logo">
@@ -139,7 +140,7 @@
                                                 <p>GitHub: <span><a href="https://github.com/SaiKiranNaik03" target="_blank"><i class=" fa fa-solid fa-arrow-up-right-from-square"></i> SaiKiranNaik03</a></span></p>
                                             </div>
                                             <div class="info-item motto padd-15" style="width: 100%;">
-                                                <p>Motto: <span>"Code to innovate, learn to inspire, build to empower."
+                                                <p>Motto: <span>"Code to Innovate, Learn to Inspire, Build to Empower"
                                                 </span></p>
                                             </div>
                                             
@@ -232,7 +233,7 @@
                                                      <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         
-                                                        <h4 class="timeline-title">Kendriya Vidhyala AFS Begumpet</h4>
+                                                        <h4 class="timeline-title">Kendriya Vidyala AFS Begumpet</h4>
                                                         <h5 class="timeline-title-desc">12th Grade - 91%</h5>
                                                         <h3 class="timeline-date">
                                                             <i class="fa fa-calendar"></i> 2020 - 2021
@@ -243,7 +244,7 @@
                                                     <!-- timeline item -->
                                                      <div class="timeline-item" style="margin-bottom: 30px;">
                                                         <div class="circle-dot"></div>
-                                                        <h4 class="timeline-title">Kendriya Vidhyala AFS Begumpet</h4>
+                                                        <h4 class="timeline-title">Kendriya Vidyala AFS Begumpet</h4>
                                                         <h5 class="timeline-title-desc">10th Grade - 84%</h5>
                                                         <h3 class="timeline-date">
                                                             <i class="fa fa-calendar"></i> 2018 - 2019
@@ -638,7 +639,7 @@
     <!-- Main Container: end -->
 
      <!-- Audio -->
-     <audio id="background-audio" loop>
+     <audio id="background-audio">
         <source src="./assets/documents/music.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
@@ -658,11 +659,11 @@
         </div>
         <h4>Color Palette</h4>
         <div class="colors">
-            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-            <span class="color-5 random" onclick="setActiveStyle('color-5')"></span>
+            <span class="color-1" title="ec1839" onclick="setActiveStyle('ec1839')"></span>
+            <span class="color-2" title="37b182" onclick="setActiveStyle('37b182')"></span>
+            <span class="color-3" title="fa5b0f" onclick="setActiveStyle('fa5b0f')"></span>
+            <span class="color-4" title="1854b4" onclick="setActiveStyle('1854b4')"></span>
+            <span class="color-5 random" title="none" onclick="setActiveStyle('random')"></span>
         </div>
       </div>
      <!-- style switcher: end -->

@@ -24,24 +24,44 @@ function genColor(){
 // Color Chnage
 const changeStyle = document.querySelectorAll(".alt-style");
 function setActiveStyle(color) {
-    if (color === "color-5") {
-        let res = genColor();
-        if(res == "rgb(242, 242, 252)" || res == "rgb(21, 21, 21)"){
+    let res ;
+    switch(color){
+        case 'ec1839':
+            res="#ec1839";
+            break;
+        case '37b182':
+            res = "#37b182";
+            break;
+        case 'fa5b0f':
+            res = "#fa5b0f";
+            break;
+        case '1854b4':
+            res = "#1854b4";
+            break;
+        case 'random':
             res = genColor();
-        }
-        document.documentElement.style.setProperty('--skin-color', res);
-    } else {
-        document.documentElement.style.removeProperty('--skin-color');
+            if(res == "rgb(242, 242, 252)" || res == "rgb(21, 21, 21)"){
+                res = genColor();
+            }
+            break;
     }
-    changeStyle.forEach((style) => {
-        if (color === style.getAttribute("title")) {
-            style.removeAttribute("disabled");
-        } else {
-            style.setAttribute("disabled", "true");
-        }
-    });
+    document.documentElement.style.setProperty('--skin-color', res);
+    // if (color === "random") {
+        
+        
+    //     document.documentElement.style.setProperty('--skin-color', res);
+    // } else {
+    //     document.documentElement.style.removeProperty('--skin-color');
+    }
+    // changeStyle.forEach((style) => {
+    //     if (color === style.getAttribute("title")) {
+    //         style.removeAttribute("disabled");
+    //     } else {
+    //         style.setAttribute("disabled", "true");
+    //     }
+    // });
 
-}
+// }
 
 // Theme Chnage
 const darkLight = document.querySelector(".day-night");
