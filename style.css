@@ -77,10 +77,10 @@ ul{
 
 .aside .logo a{
     color: var(--text-black-900);
-    font-weight: 700;
+    font-weight: 500;
     padding: 0px 20px;
     font-size: 30px;
-    letter-spacing: 3px;
+    /* letter-spacing: 0.3px; */
     position: relative;
 }
 .aside .logo a span{
