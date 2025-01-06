@@ -77,20 +77,20 @@ moreBtn.onclick = function() {
 };
 
 // Contact form submit logic
-const formItems = document.querySelectorAll('.form-item');
-const submitButton = document.querySelector('.contactBtn');
+// const formItems = document.querySelectorAll('.form-item');
+// const submitButton = document.querySelector('.contactBtn');
 
-formItems.forEach(item => {
-    item.addEventListener('click', function() {
-        submitButton.click();  // Trigger form submission
-    });
-});
+// formItems.forEach(item => {
+//     item.addEventListener('click', function() {
+//         submitButton.click();  // Trigger form submission
+//     });
+// });
 
-// Optional: If you want to submit the form when pressing Enter key
-formItems.forEach(item => {
-    item.addEventListener('keydown', function(event) {
-        if (event.key === 'Enter') {
-            submitButton.click();  // Trigger form submission
-        }
-    });
-});
+// // Optional: If you want to submit the form when pressing Enter key
+// formItems.forEach(item => {
+//     item.addEventListener('keydown', function(event) {
+//         if (event.key === 'Enter') {
+//             submitButton.click();  // Trigger form submission
+//         }
+//     });
+// });
