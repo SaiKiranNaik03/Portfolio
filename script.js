@@ -94,3 +94,29 @@ moreBtn.onclick = function() {
 //         }
 //     });
 // });
+
+// active class changes based on the scroll
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav a');
+
+    // Create an IntersectionObserver
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    // Remove 'active' class from all links
+                    navLinks.forEach((link) => link.classList.remove('active'));
+
+                    // Add 'active' class to the link corresponding to the current section
+                    const activeLink = document.querySelector(`.nav a[href="#${entry.target.id}"]`);
+                    if (activeLink) activeLink.classList.add('active');
+                }
+            });
+        },
+        { threshold: 0.3 } // Adjust this value for when the section is considered "on top"
+    );
+
+    // Observe each section
+    sections.forEach((section) => observer.observe(section));
+});
