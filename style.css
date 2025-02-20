@@ -83,11 +83,17 @@ ul{
     /* letter-spacing: 0.3px; */
     position: relative;
 }
+.aside .logo a{
+    font-family: "Italianno";
+    font-size: 50px;
+}
 .aside .logo a span{
     font-family: "Italianno";
     font-size: 50px;
+    color: var(--skin-color);
     /* letter-spacing: 5px; */
 }
+
 /* .aside .logo a::before {
     content: ''; 
     position: absolute;
@@ -459,7 +465,38 @@ h3.profession{
     max-width: 100%;
     margin-top: 20px;
 }
+/* achievements css-1 */
 
+.about .about-content .achievements-container{
+    flex: 0 0 100%;
+    max-width: 100%;
+    overflow: hidden; 
+    position: relative;
+    margin: 0 10px;
+    margin-top: 15px;
+}
+.about .about-content .achievements-container .achievements{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 8px;
+}
+.about .about-content .achievements-container .achievement{
+    width: 100%;
+    padding: 20px;
+    font-size: 16.5px;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    color: var(--text-black-700);
+    text-align: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+.about .about-content .achievements-container .achievement b{
+    color: var(--text-black-900);
+} 
+
+
+/* achievements css-2 */
 
 .about .about-content .personal-info .buttons{
     margin-top: 15px;
@@ -504,7 +541,7 @@ h3.profession{
 .about .about-content .experience{
     flex:0 0 50%;
     max-width: 50%;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .about .about-content h3.title{

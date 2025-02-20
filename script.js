@@ -120,3 +120,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // Observe each section
     sections.forEach((section) => observer.observe(section));
 });
+
+
+// acheivement section - js-1
+document.addEventListener('DOMContentLoaded', () => {
+    const achievements = document.querySelector('.achievements');
+    const achievementItems = document.querySelectorAll('.achievement');
+    const totalItems = achievementItems.length;
+    let currentIndex = 0;
+
+    setInterval(() => {
+        // Increment the index
+        currentIndex = (currentIndex + 1) % totalItems;
+
+        // Calculate the scroll amount based on the item width
+        const scrollAmount = currentIndex * (achievementItems[0].offsetWidth);
+
+        // Apply the transform to scroll horizontally
+        achievements.style.transform = `translateX(-${scrollAmount}px)`;
+    }, 3000); 
+});
+
+// acheivement section - js-2
