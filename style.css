@@ -755,6 +755,105 @@ h3.profession{
     }
 }
 
+/* Events */
+.events .gallery-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Scrolling Container */
+.events .gallery-wrapper .gallery-container {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 20s linear infinite;
+}
+
+/* Event Card */
+.events .gallery-wrapper .gallery-container .event-card {
+    width: 380px;
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+}
+.events .gallery-wrapper .gallery-container .event-card h3{
+    font-size: 18.5px;
+    letter-spacing: 0.5px;
+}
+.events .gallery-wrapper .gallery-container .event-card p{
+    font-size: 16px;
+    letter-spacing: 0.7px;
+}
+.events .gallery-wrapper .gallery-container .event-card img {
+    width: 100%;
+    height: 270px;
+    border-radius: 8px;   
+}
+.events .gallery-wrapper .gallery-container .event-card .brief , span{
+    color: var(--text-black-700);
+}
+.events .gallery-wrapper .gallery-container .event-info {
+    text-align: left;
+    padding: 10px;
+    background: var(--bg-black-900);
+    height: 100%;
+} 
+
+.events .gallery-wrapper .gallery-container .event-card:hover h3{
+    color: var(--skin-color);
+}
+.events .gallery-wrapper .gallery-container .event-info .event-buttons .fa{
+    display: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 40px;
+    padding: 7px 20px;
+    color: var(--text-black-900);
+    text-decoration: none;
+    background-color: var(--skin-color);
+    border: 2px solid var(--skin-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+.events .gallery-wrapper .gallery-container .event-info .event-buttons .fa:hover{
+    background-color: var(--bg-black-900);
+    color: var(--skin-color);
+}
+.events .gallery-wrapper .gallery-container .event-info p {
+    margin: 5px 0;
+}
+
+/* Infinite Scroll Animation */
+ @keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-10%);
+    }
+}
+@media screen and (max-width: 768px) {
+    .events .gallery-wrapper .gallery-container {
+        animation: scroll-small 25s linear infinite;
+    }
+
+    @keyframes scroll-small {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-15%);
+        }
+    }
+}
 
 /* Projects */
 .projects .container{
@@ -949,7 +1048,7 @@ h3.profession{
 }
 .footer .foot-content .foot-name{
     color: var(--text-black-700);
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 5px;
 }
 /* Animations */

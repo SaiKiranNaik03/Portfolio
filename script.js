@@ -140,5 +140,32 @@ document.addEventListener('DOMContentLoaded', () => {
         achievements.style.transform = `translateX(-${scrollAmount}px)`;
     }, 3000); 
 });
+// Events
 
-// acheivement section - js-2
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById("gallery");
+
+    function duplicateEvents() {
+        const events = Array.from(container.children);
+
+        for (let i = 0; i < 5; i++) {  
+            events.forEach(event => {
+                const clone = event.cloneNode(true);
+                container.appendChild(clone);
+            });
+        }
+    }
+
+    duplicateEvents();
+
+    // Toggle scrolling on click
+    let isPaused = false;
+    container.addEventListener("click", () => {
+        if (isPaused) {
+            container.style.animationPlayState = "running";
+        } else {
+            container.style.animationPlayState = "paused";
+        }
+        isPaused = !isPaused;
+    });
+});
