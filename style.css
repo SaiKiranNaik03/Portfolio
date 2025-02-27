@@ -626,6 +626,71 @@ h3.profession{
     color: var(--text-black-700);
 }
 
+.about .stats {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .stats .title {
+    font-size: 25px;
+    color: var(--text-black-900);
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.about .stats .stats-inner {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap; /* Default: wrap items in rows */
+    justify-content: space-around;
+}
+
+.about .stats .stats-inner .stat-info {
+    flex: 1 1 calc(20% - 10px); 
+    margin: 20px 5px;
+    padding: 20px 15px;
+    min-width: 20%; 
+    border-radius: 10px;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    transition: all 0.3s ease;
+}
+.about .stats .stats-inner .stat-info:hover {
+    box-shadow: 0 0 20px var(--bg-black-50);
+    transform: scale(1.001);
+}
+.about .stats .stats-inner .stat-info h3 {
+    color: var(--text-black-900);
+    font-size: 30px;
+    font-weight: 700;
+}
+.about .stats .stats-inner .stat-info p {
+    color: var(--text-black-700);
+    font-size: 20px;
+}
+
+@media (max-width: 820px) {
+    .about .stats .title{
+        padding-left: 0;
+    }
+    .about .stats .stats-inner {
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        justify-content: flex-start; 
+        scrollbar-width: thin; 
+        white-space: nowrap; 
+    }
+
+    .about .stats .stats-inner .stat-info {
+        flex: 0 0 auto; 
+        min-width: 150px; 
+        margin: 10px; 
+    }
+}
+
 /* services */
 
 .section .container{
@@ -773,7 +838,7 @@ h3.profession{
 
 /* Event Card */
 .events .gallery-wrapper .gallery-container .event-card {
-    width: 380px;
+    width: 350px;
     background: var(--bg-black-100);
     color: var(--text-black-900);
     padding: 10px;
@@ -795,7 +860,7 @@ h3.profession{
 }
 .events .gallery-wrapper .gallery-container .event-card img {
     width: 100%;
-    height: 270px;
+    height: 300px;
     border-radius: 8px;   
 }
 .events .gallery-wrapper .gallery-container .event-card .brief , span{
