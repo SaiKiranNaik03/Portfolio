@@ -310,8 +310,9 @@ ul{
     height: 250px;
     /* border-radius: 10px; */
     margin-top: 15px;
-    padding: 5px;
-    border: groove 5px var(--skin-color);
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px var(--skin-color), -2px -2px 5px var(--skin-color, 0.2);
+    /* border: groove 5px var(--skin-color); */
 }
 
 .home .home-img{
