@@ -329,9 +329,9 @@ ul{
 .home .home-img img{
     height: 340px;
     margin: auto;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-top: 15px;
-    transform: scaleX(-1);
+    /* transform: scale(1.05); */
 }
 .home-img::after{
     content: '';
@@ -500,7 +500,7 @@ h3.profession{
 /* achievements css-2 */
 
 .about .about-content .personal-info .buttons{
-    margin-top: 15px;
+    margin-top: 35px;
     margin-left: 15px; 
 }
 .about .about-content .personal-info .buttons .btn{
